@@ -190,3 +190,68 @@ p {
 
 
 
+/* Project Page */
+.project-page {
+    background-image: url('../assets/doodle_items.png'); /* Background image */
+    background-size: auto; /* Keeps original size */
+    background-repeat: repeat; /* Ensures it repeats */
+    background-position: top left; /* Adjust position if needed */
+    padding: 60px 0;
+}
+
+/* Project Section */
+.project-section {
+    margin-top: 230px; 
+    margin-bottom: 250px;  
+}
+
+.project-section .row {
+    display: flex;
+    justify-content: center; /* Centers items */
+    flex-wrap: wrap;
+    gap: 20px; /* Spacing between items */
+}
+
+/* Project Boxes */
+.projects {
+    flex: 1;
+    min-width: 280px; /* Adjusted for better fit */
+    max-width: 32%; /* Ensures three items fit in a row */
+    background: rgba(57, 62, 70, 0.75);
+    backdrop-filter: blur(2px);
+    height: 260px; /* Reduced size for better fit */
+    border-radius: 15px;
+    display: flex; /* Center content */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents content overflow */
+}
+
+/* Images inside project boxes */
+.projects img {
+    max-width: 100%; /* Ensures image fits inside */
+    max-height: 100%; /* Ensures image fits inside */
+    object-fit: contain; /* Maintains aspect ratio without cropping */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) { /* For tablets and smaller desktops */
+    .projects {
+        max-width: 30%; /* Keeps three in a row */
+        height: 240px; /* Reduce height for better layout */
+    }
+}
+
+@media (max-width: 768px) { /* For smaller screens */
+    .projects {
+        max-width: 45%; /* Two in a row */
+        height: 220px;
+    }
+}
+
+@media (max-width: 576px) { /* For mobile screens */
+    .projects {
+        max-width: 100%; /* Full width */
+        height: 200px;
+    }
+}
