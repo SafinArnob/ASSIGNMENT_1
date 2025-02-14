@@ -122,3 +122,71 @@ body {
         max-width: 600px;
     }
 }
+
+/* About Me Section */
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+
+.highlight {
+    color: #00ADB5; 
+}
+.read-more{
+    color: white;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    color: #c0bdbd;
+    max-width: 500px;
+}
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/doodle_items.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+
+    /* Move the section down */
+    margin-top: 230px; 
+    margin-bottom: 250px;
+}
+
+.main-image {
+    position: absolute;
+    max-width: 60%;
+}
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 38px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .image-container {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        min-height: 250px;
+    }
+
+    .main-image {
+        max-width: 60%;
+    }
+}
+
+
+
