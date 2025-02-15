@@ -78,7 +78,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px; /* Lower the image */
+    margin-top: 50px;
 }
 .main-img img {
     width: 100%;
@@ -157,7 +157,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../assets/doodle_items.png'); 
+    background-image: url('./assets/doodle_items.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -198,7 +198,7 @@ p {
 
 /* Project Page */
 .project-page {
-    background-image: url('../assets/doodle_items.png'); 
+    background-image: url('./assets/doodle_items.png'); 
     background-size: auto; 
     background-repeat: repeat;
     background-position: top left; 
