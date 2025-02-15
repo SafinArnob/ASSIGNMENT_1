@@ -204,8 +204,6 @@ p {
     background-position: top left; 
     padding: 60px 0;
 }
-
-/* Project Section */
 .project-section {
     margin-top: 230px; 
     margin-bottom: 250px;  
@@ -217,8 +215,6 @@ p {
     flex-wrap: wrap;
     gap: 20px; 
 }
-
-/* Project Boxes */
 .projects {
     flex: 1;
     min-width: 280px; 
@@ -232,8 +228,6 @@ p {
     align-items: center;
     overflow: hidden; 
 }
-
-/* Images inside project boxes */
 .projects img {
     max-width: 100%; 
     max-height: 100%; 
