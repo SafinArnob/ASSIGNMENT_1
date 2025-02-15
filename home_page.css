@@ -89,54 +89,66 @@ h3{
 
 /* Arrow */
 .arrow-container {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 50px;
 }
+
 .arrow-class {
-    position: absolute;
-    top: 95%;
-    left: 25%;
     width: 96px;
     height: 96px;
     background: rgba(57, 62, 70, 0.75);
     backdrop-filter: blur(4px);
     border-radius: 50%;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .arrow {
     font-size: 45px;
     color: white;
 }
-@media (min-width: 768px) { 
-    .text-content {
-        text-align: left;
-        padding: 50px;
-        margin-top: 2%;
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .arrow-class {
+        width: 80px;
+        height: 80px;
     }
-    .buttons {
-        justify-content: flex-start;
-    }
-    .main-img {
-        margin-top: 80px; 
-    }
-    .main-img img {
-        max-width: 500px;
+
+    .arrow {
+        font-size: 38px;
     }
 }
-@media (min-width: 1024px) { 
-    .text-content {
-        margin-top: -10%; 
+
+@media (max-width: 768px) {
+    .arrow-class {
+        width: 70px;
+        height: 70px;
     }
-    .main-img {
-        margin-top: 120px; 
-    }
-    .main-img img {
-        max-width: 600px;
+
+    .arrow {
+        font-size: 32px;
     }
 }
+
+@media (max-width: 576px) {
+    .arrow-container {
+        margin-top: 30px;
+    }
+
+    .arrow-class {
+        width: 60px;
+        height: 60px;
+    }
+
+    .arrow {
+        font-size: 28px;
+    }
+}
+
 
 /* About Me Section */
 .highlight {
@@ -343,11 +355,9 @@ p {
     gap: 5px;
     transition: color 0.3s;
 }
-
 .footer-menu a:hover {
     color: #00ADB5;
 }
-
 .footer-menu a i {
     font-size: 18px;
 }
