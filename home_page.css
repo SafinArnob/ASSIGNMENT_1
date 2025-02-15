@@ -216,6 +216,12 @@ p {
     background-position: top left; 
     padding: 60px 0;
 }
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start; 
+}
 .project-section {
     margin-top: 230px; 
     margin-bottom: 250px;  
